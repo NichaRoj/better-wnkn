@@ -1,3 +1,4 @@
+import './style.css'
 import { FunctionalComponent, h } from 'preact'
 
 const Login: FunctionalComponent = () => {

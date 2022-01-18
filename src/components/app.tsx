@@ -4,6 +4,7 @@ import { Route, Router } from 'preact-router'
 import Home from '../routes/home'
 import Login from '../routes/login'
 import NotFoundPage from '../routes/notfound'
+import Review from '../routes/review'
 
 const App: FunctionalComponent = () => {
   return (
@@ -11,6 +12,7 @@ const App: FunctionalComponent = () => {
       <Router>
         <Route path="/" component={Home} />
         <Route path="/login" component={Login} />
+        <Route path="/review" component={Review} />
         <NotFoundPage default />
       </Router>
     </div>
