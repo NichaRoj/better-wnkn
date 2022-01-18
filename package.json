@@ -21,13 +21,13 @@
     ]
   },
   "dependencies": {
+    "autoprefixer": "^10.4.2",
     "preact": "^10.3.1",
     "preact-render-to-string": "^5.1.4",
     "preact-router": "^3.2.1",
     "tailwindcss": "^3.0.15"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^4.1.3",
     "@types/enzyme": "^3.10.5",
     "@types/jest": "^26.0.8",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
@@ -39,7 +39,6 @@
     "jest": "^27.2.5",
     "jest-preset-preact": "^4.0.2",
     "preact-cli": "^3.0.0",
-    "preact-cli-tailwind": "^3.0.0",
     "sirv-cli": "^1.0.0-next.3",
     "typescript": "^4.5.2"
   },
