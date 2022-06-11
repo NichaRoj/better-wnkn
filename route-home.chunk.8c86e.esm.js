@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{"4jrf":function(e,t,n){"use strict";var o=n("hosL"),c=n("Y3FI");class s extends o.Component{componentWillMount(){Object(c.route)(this.props.to,!0)}render(){return null}}t.a=({children:e})=>Object(o.h)(s,{to:"/login"})},FDtd:function(e,t,n){"use strict";n.r(t);var o=n("hosL"),c=n("4jrf"),s="home__uRcqa";t.default=()=>Object(o.h)(c.a,null,Object(o.h)("div",{class:s},Object(o.h)("h1",null,"Home"),Object(o.h)("p",null,"This is the Home component.")))}}]);
-//# sourceMappingURL=route-home.chunk.8c86e.esm.js.map

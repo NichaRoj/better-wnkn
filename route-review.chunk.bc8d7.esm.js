@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"+7S6":function(e,t,n){"use strict";n.r(t);var o=n("hosL"),s=n("4jrf"),c="home__I8ztH";t.default=()=>Object(o.h)(s.a,null,Object(o.h)("div",{class:c},Object(o.h)("h1",null,"Review"),Object(o.h)("p",null,"This is the Review component.")))},"4jrf":function(e,t,n){"use strict";var o=n("hosL"),s=n("Y3FI");class c extends o.Component{componentWillMount(){Object(s.route)(this.props.to,!0)}render(){return null}}t.a=({children:e})=>Object(o.h)(c,{to:"/login"})}}]);
-//# sourceMappingURL=route-review.chunk.bc8d7.esm.js.map
