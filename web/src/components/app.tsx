@@ -1,5 +1,6 @@
 import { FunctionalComponent, h } from 'preact'
 import { Route, Router } from 'preact-router'
+import baseroute from '../baseroute'
 // pages
 import Home from '../routes/home'
 import Login from '../routes/login'
@@ -10,9 +11,9 @@ const App: FunctionalComponent = () => {
   return (
     <div id="preact_root">
       <Router>
-        <Route path="/" component={Home} />
-        <Route path="/login" component={Login} />
-        <Route path="/review" component={Review} />
+        <Route path={`${baseroute}/`} component={Home} />
+        <Route path={`${baseroute}/login `} component={Login} />
+        <Route path={`${baseroute}/review`} component={Review} />
         <NotFoundPage default />
       </Router>
     </div>
