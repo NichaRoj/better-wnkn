@@ -12,7 +12,7 @@ const App: FunctionalComponent = () => {
     <div id="preact_root">
       <Router>
         <Route path={`${baseroute}/`} component={Home} />
-        <Route path={`${baseroute}/login `} component={Login} />
+        <Route path={`${baseroute}/login`} component={Login} />
         <Route path={`${baseroute}/review`} component={Review} />
         <NotFoundPage default />
       </Router>

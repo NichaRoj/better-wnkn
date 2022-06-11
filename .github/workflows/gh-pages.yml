@@ -23,20 +23,21 @@ jobs:
       - uses: actions/cache@v3
         id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
         with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          path: |
+            ${{ steps.yarn-cache-dir-path.outputs.dir }}
+            ./web/node_modules
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies
-        uses: borales/actions-yarn@v3.0.0
-        with:
-          cmd: yarn install --frozen-lockfile
+        if: steps.yarn-cache.outputs.cachie-hit != 'true'
+        working-directory: ./web
+        run: yarn
 
       - name: Build website
-        uses: borales/actions-yarn@v3.0.0
-        with:
-          cmd: yarn build
+        working-directory: ./web
+        run: yarn build:gh
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2
